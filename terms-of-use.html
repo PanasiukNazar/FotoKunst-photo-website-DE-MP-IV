@@ -2,12 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>LichtBildSchweiz</title>
+        <title>FotoKunst</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
-
-        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
 
         <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
 
@@ -15,14 +13,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
             rel="stylesheet"
         />
 
         <!-- Icon Font Stylesheet -->
         <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
             rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
@@ -30,11 +32,11 @@
         />
 
         <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
         <link
             href="lib/owlcarousel/assets/owl.carousel.min.css"
             rel="stylesheet"
         />
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -53,38 +55,39 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Navbar start -->
-        <div class="container-fluid fixed-top px-0">
-            <div class="container px-0">
-                <nav class="navbar navbar-light bg-light navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand ms-3">
-                        <h1 class="text-primary display-5">LichtBildSchweiz</h1>
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5">
+                            Foto<span class="text-white">Kunst</span>
+                        </h1>
                     </a>
                     <button
-                        class="navbar-toggler py-2 px-3 me-3"
+                        class="navbar-toggler bg-primary"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse"
                     >
-                        <span class="fa fa-bars text-primary"></span>
+                        <span class="fa fa-bars text-dark"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse bg-light"
+                        class="collapse navbar-collapse me-n3"
                         id="navbarCollapse"
                     >
                         <div class="navbar-nav ms-auto">
-                            <a
-                                href="index.html"
-                                class="nav-item nav-link active"
+                            <a href="index.html" class="nav-item nav-link"
                                 >Startseite</a
                             >
-                            <a href="about.html" class="nav-item nav-link"
+                            <a
+                                href="about.html"
+                                class="nav-item nav-link active"
                                 >Über uns</a
                             >
                             <a href="price.html" class="nav-item nav-link"
                                 >Preise</a
                             >
-
                             <div class="nav-item dropdown">
                                 <a
                                     href="#"
@@ -92,24 +95,24 @@
                                     data-bs-toggle="dropdown"
                                     >Seiten</a
                                 >
-                                <div
-                                    class="dropdown-menu m-0 bg-secondary rounded-0"
-                                >
+                                <div class="dropdown-menu m-0 bg-primary">
                                     <a
                                         href="work-with-stars.html"
                                         class="dropdown-item"
                                         >Arbeit mit Stars</a
                                     >
                                     <a
-                                        href="photo-editing.html"
+                                        href="passport.html"
                                         class="dropdown-item"
-                                        >Fotobearbeitung</a
+                                        >Passfotos</a
+                                    >
+                                    <a
+                                        href="custom-video-editing.html"
+                                        class="dropdown-item"
+                                        >Videoschnitt auf Bestellung</a
                                     >
                                 </div>
                             </div>
-                            <a href="passport.html" class="nav-item nav-link"
-                                >Passfotos</a
-                            >
                         </div>
                     </div>
                 </nav>
@@ -120,7 +123,7 @@
         <main>
             <article
                 class="container additional-wrapper"
-                style="margin-top: 100px"
+                style="margin-top: 30px"
             >
                 <div class="page__content" style="padding: 20px 0px">
                     <h1>Nutzungsbedingungen</h1>
@@ -206,190 +209,83 @@
                         Nutzungsbedingungen haben, kontaktieren Sie uns bitte
                         unter den folgenden Kontaktdaten:
                     </p>
-                    <p>Email: licht_bild_schweiz@gmail.com</p>
-                    <p>Telefon: +41313018828</p>
+                    <p>Email: foto_kunst@gmail.com</p>
+                    <p>Telefon: +41313522929</p>
                 </div>
             </article>
         </main>
 
         <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark text-body py-5">
+        <div
+            class="container-fluid footer py-5 wow fadeIn"
+            data-wow-delay=".3s"
+        >
             <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="row g-4 footer-inner">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-item">
-                            <h4 class="mb-4 text-white">LichtBildSchweiz</h4>
-                            <p class="mb-4">
-                                Willkommen bei Ihrem professionellen Fotografen
-                                in der Schweiz. Mit einer Leidenschaft für
-                                Fotografie und einem Auge für Details bieten wir
-                                erstklassige Dienstleistungen in den Bereichen
-                                Hochzeitsfotografie, Porträtfotografie,
-                                Landschaftsfotografie und Eventfotografie.
+                            <h4 class="text-white fw-bold mb-4">FotoKunst</h4>
+                            <p>
+                                Entdecken Sie die Kunst der Fotografie in der
+                                Schweiz. Mit einer Leidenschaft für
+                                atemberaubende Landschaften und unvergessliche
+                                Momente bieten wir professionelle
+                                Fotografiedienstleistungen, die jedes Detail
+                                einfangen. Kontaktieren Sie uns für individuelle
+                                Fotoshootings, besondere Anlässe oder
+                                Werbeprojekte.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Kontakt</h4>
-                            <a href=""
-                                ><i class="fas fa-angle-right me-2"></i>
-                                Engehaldenstrasse 128, 3012 Bern, Switzerland</a
-                            >
-                            <a href=""
-                                ><i class="fas fa-angle-right me-2"></i>
-                                +41313018828</a
-                            >
-                            <a href=""
-                                ><i class="fas fa-angle-right me-2"></i>
-                                licht_bild_schweiz@gmail.com</a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Nützliche Links</h4>
-                            <a href="index.html"
-                                ><i class="fas fa-angle-right me-2"></i>
-                                Startseite</a
-                            >
-                            <a href="about.html"
-                                ><i class="fas fa-angle-right me-2"></i> Über
-                                uns</a
-                            >
-                            <a href="privacy-policy.html"
-                                ><i class="fas fa-angle-right me-2"></i>
-                                Datenschutz</a
-                            >
-                            <a href="terms-of-use.html"
-                                ><i class="fas fa-angle-right me-2"></i>
-                                Begriffe</a
-                            >
-                            <a href="bussines-model.html"
-                                ><i class="fas fa-angle-right me-2"></i>
-                                Business-Modell</a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-item">
-                            <h4 class="mb-4 text-white">Our Gallery</h4>
-                            <div class="row g-2">
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-1.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-1.jpg"
-                                                data-lightbox="footerGallery-1"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-2.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-2.jpg"
-                                                data-lightbox="footerGallery-2"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-3.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-3.jpg"
-                                                data-lightbox="footerGallery-3"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-4.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-4.jpg"
-                                                data-lightbox="footerGallery-4"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-5.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-5.jpg"
-                                                data-lightbox="footerGallery-5"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img
-                                            src="img/gallery-footer-6.jpg"
-                                            class="img-fluid w-100"
-                                            alt=""
-                                        />
-                                        <div class="footer-search-icon">
-                                            <a
-                                                href="img/gallery-footer-6.jpg"
-                                                data-lightbox="footerGallery-6"
-                                                class="my-auto"
-                                                ><i
-                                                    class="fas fa-search-plus text-white"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <h4 class="text-white fw-bold mb-4">
+                                Nützlicher Link
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="index.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Startseite</a
+                                >
+                                <a class="btn btn-link ps-0" href="about.html"
+                                    ><i class="fa fa-check me-2"></i>Über uns</a
+                                >
+                                <a
+                                    class="btn btn-link ps-0"
+                                    href="privacy-policy.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Datenschutz</a
+                                >
+                                <a
+                                    class="btn btn-link ps-0"
+                                    href="bussines-model.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Business-Modell</a
+                                >
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Kontakt</h4>
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"
+                                ><i class="fa fa-map-marker-alt me-3"></i
+                                >Thunstrasse 10, 3005 Bern, Switzerland</a
+                            >
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
+                                ><i class="fa fa-phone-alt me-3"></i
+                                >+41313522929</a
+                            >
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
+                                ><i class="fa fa-envelope me-3"></i
+                                >foto_kunst@gmail.com</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -398,32 +294,35 @@
         <!-- Footer End -->
 
         <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
+        <div class="container-fluid copyright bg-dark py-4">
             <div class="container">
-                <div class="row g-4 align-items-center">
-                    <p>
-                        Haftungsausschluss: Die Informationen auf dieser Website
-                        sind nicht als Rechtsberatung gedacht und begründen kein
-                        Mandatsverhältnis. Die hier zur Verfügung gestellten
-                        Informationen, Dokumente oder Formulare dienen nur
-                        allgemeinen Informationszwecken und sollten nicht als
-                        Rechtsberatung angesehen werden. Die Gesetze ändern sich
-                        regelmäßig; daher kann es sein, dass die Informationen
-                        auf dieser Website nicht korrekt sind. Es ist unbedingt
-                        erforderlich, dass Sie sich rechtlich beraten lassen, um
-                        Ihre Rechte und Pflichten nach geltendem Recht und unter
-                        Berücksichtigung Ihrer besonderen Umstände zu
-                        bestimmen.olorlib can't be removed.
-                    </p>
+                <div class="row">
+                    <div
+                        class="col-md-12 my-auto text-center text-md-end text-white"
+                    >
+                        <p class="text-center">
+                            Haftungsausschluss: Die Informationen auf dieser
+                            Website sind nicht als Rechtsberatung gedacht und
+                            begründen kein Mandatsverhältnis. Die hier zur
+                            Verfügung gestellten Informationen, Dokumente oder
+                            Formulare dienen nur allgemeinen Informationszwecken
+                            und sollten nicht als Rechtsberatung angesehen
+                            werden. Die Gesetze ändern sich regelmäßig; daher
+                            kann es sein, dass die Informationen auf dieser
+                            Website nicht korrekt sind. Es ist unbedingt
+                            erforderlich, dass Sie sich rechtlich beraten
+                            lassen, um Ihre Rechte und Pflichten nach geltendem
+                            Recht und unter Berücksichtigung Ihrer besonderen
+                            Umstände zu bestimmen.olorlib can't be removed.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Copyright End -->
 
         <!-- Back to Top -->
-        <a
-            href="#"
-            class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"
             ><i class="fa fa-arrow-up"></i
         ></a>
 
@@ -454,12 +353,12 @@
 
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
